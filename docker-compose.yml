@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  web:
+    image: nginx:latest
+    container_name: webserver
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./apps/:/usr/share/nginx/html
+    ports:
+      - 80:80
+      - 85:85
+      - 86:86
+      - 88:88
