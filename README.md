@@ -8,8 +8,20 @@ For demonstration purposes were created three apps examples:
 Note: assets folder was placed on same level of apps to illustrate calls to root domain.
 
 ## Question
-As multiple site (can be SPA too) can be on the same domain?
-
+Can multiple sites (can be SPA too) be on the same domain?
 ### 1. Based Name Approach
 
+For this method work, it's needly edit `hosts` file.
+ - for based unix system: `/etc/hosts`
+ - for windows system: `c:\Windows\System32\Drivers\etc\hosts`
+
+ Add the following instructions:
+ > 127.0.0.1 site1.local  
+ > 127.0.0.1 site2.local  
+ > 127.0.0.1 site3.local
+
+Nginx configuration: `based-name.conf`
+
 ### 2. Based IP Approach
+
+Nginx configuration: `based-name.conf`
