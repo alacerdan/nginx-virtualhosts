@@ -7,6 +7,9 @@ For demonstration purposes were created three apps examples:
 
 Note: assets folder was placed on same level of apps to illustrate calls to root domain.
 
+# Requirements:
+- Docker and docker-compose
+
 ## Question
 Can multiple sites (can be SPA too) be on the same domain?
 ### 1. Based Name Approach
@@ -24,4 +27,4 @@ Nginx configuration: `based-name.conf`
 
 ### 2. Based IP Approach
 
-Nginx configuration: `based-name.conf`
+Nginx configuration: `based-ip.conf`
